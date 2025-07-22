@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: gray;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 230px;
+}
+
+.numbers button {
+    font-size: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .3s;
+
+     &:hover {
+    background-color: gray; 
+  }
+}
+
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    background-color: darkgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.display {
+    font-size: 30px;
+    text-align: right;
+    outline: 3px solid black;
+    background-color: lightgray;  
+    line-height: 50px;
+    font-weight: bolder;
+    min-height: 50px;
+    border-radius: 10px;
+    text-overflow: clip;
+    overflow: hidden;
+}
