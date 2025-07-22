@@ -50,3 +50,8 @@ html, body {
     text-overflow: clip;
     overflow: hidden;
 }
+
+
+.numbers button:active{
+    border-style: outset
+}
